@@ -1,1 +1,3 @@
 # VideoResizer
+
+Set-ExecutionPolicy RemoteSigned
