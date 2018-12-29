@@ -12,7 +12,7 @@ Function Resize() {
     Get-ChildItem -Path $inputDirectory -filter *.mp4 | foreach {
         $command = "ffmpeg -i `"" + $_.FullName + "`" `"" + $outputDirectory + "\" + $_.BaseName + ".mp4`""
         Write-Host $command
-        iex $command
+        Invoke-Expression $command
     }
 }
 
